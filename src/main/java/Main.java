@@ -12,6 +12,7 @@ import org.jscience.physics.model.RelativisticModel;
 import org.jscience.physics.amount.Amount;
 
 public class Main extends HttpServlet {
+
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
