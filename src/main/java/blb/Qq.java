@@ -1,5 +1,6 @@
 package blb;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,9 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 //@RequestMapping(value="/qq")
 public class Qq {
-    @RequestMapping(value="/qq/{user}", method= RequestMethod.GET)
-    public User getUser(@PathVariable Long user) {
-        return new User("abbb"+user, "descr2 "+user);
+
+    @Autowired
+    UsersRepository repository;
+
+    @RequestMapping(value="/qq/{name}", method= RequestMethod.GET)
+    public User getUser(@PathVariable String name) {
+        return repository.findByName(name).get(0);
+        //return new User("abbb"+user, "descr2 "+user);
     }
 
 }

@@ -1,5 +1,6 @@
 package blb;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
@@ -11,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 //@EnableAutoConfiguration
 //@RestController
 @SpringBootApplication
-public class SampleController {
+public class SampleController implements CommandLineRunner {
 
 //    @RequestMapping("/")
 //    @ResponseBody
@@ -28,8 +29,20 @@ public class SampleController {
 //        return new Greeting(counter.incrementAndGet(),
 //                String.format(template, name));
 //    }
+    @Autowired
+    UsersRepository repository;
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(SampleController.class, args);
+    }
+
+    @Override
+    public void run(String... strings) throws Exception {
+        repository.save(new User("Jack", "Bauer"));
+        repository.save(new User("Chloe", "O'Brian"));
+        repository.save(new User("Kim", "Bauer"));
+        repository.save(new User("David", "Palmer"));
+        repository.save(new User("Michelle", "Dessler"));
+
     }
 }
