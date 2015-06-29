@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * Created by ericr on 6/28/15.
  */
@@ -17,9 +19,13 @@ public class Qq {
     UsersRepository repository;
 
     @RequestMapping(value="/qq/{name}", method= RequestMethod.GET)
-    public User getUser(@PathVariable String name) {
-        return repository.findByName(name).get(0);
-        //return new User("abbb"+user, "descr2 "+user);
+    public Zser getZser(@PathVariable String name) {
+        List<Zser> ww = repository.findByName(name);
+        if(ww!=null && ww.size()>0)
+            return ww.get(0);
+        else
+            return null;
+        //return new Zser("abbb"+user, "descr2 "+user);
     }
 
 }

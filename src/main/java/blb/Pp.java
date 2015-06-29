@@ -14,8 +14,8 @@ class Pp {
 //@RestController
 //public class Pp {
 //    @RequestMapping(value="/hello", method= RequestMethod.GET)
-//    public User getUser(@PathVariable Long user) {
-//        return new User("a"+user, "descr "+user);
+//    public Zser getUser(@PathVariable Long user) {
+//        return new Zser("a"+user, "descr "+user);
 //    }
 //
 //}

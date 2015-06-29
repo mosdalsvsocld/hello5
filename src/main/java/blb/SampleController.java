@@ -3,10 +3,6 @@ package blb;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
-import org.springframework.stereotype.*;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.concurrent.atomic.AtomicLong;
 
 //@Controller
 //@EnableAutoConfiguration
@@ -38,11 +34,11 @@ public class SampleController implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        repository.save(new User("Jack", "Bauer"));
-        repository.save(new User("Chloe", "O'Brian"));
-        repository.save(new User("Kim", "Bauer"));
-        repository.save(new User("David", "Palmer"));
-        repository.save(new User("Michelle", "Dessler"));
+        repository.save(new Zser("Jack", "Bauer"));
+        repository.save(new Zser("Chloe", "O'Brian"));
+        repository.save(new Zser("Kim", "Bauer"));
+        repository.save(new Zser("David", "Palmer"));
+        repository.save(new Zser("Michelle", "Dessler"));
 
     }
 }

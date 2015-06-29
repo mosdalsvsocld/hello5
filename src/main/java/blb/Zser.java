@@ -9,17 +9,20 @@ import javax.persistence.Id;
  * Created by ericr on 6/28/15.
  */
 @Entity
-public class User {
+public class Zser {
     @Id
     @GeneratedValue
     private Long id;
 
     @Column(nullable = false)
-    private final String name;
+    private String name;
     @Column(nullable = false)
-    private final String descr;
+    private String descr;
 
-    public User(String name, String descr) {
+    public Zser() {
+
+    }
+    public Zser(String name, String descr) {
         this.name = name;
         this.descr = descr+" created at "+System.currentTimeMillis();
     }

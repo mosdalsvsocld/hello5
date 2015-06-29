@@ -9,7 +9,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 @Configuration
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 public class Config {
 
     @Bean
