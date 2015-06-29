@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Qq {
     @RequestMapping(value="/qq/{user}", method= RequestMethod.GET)
     public User getUser(@PathVariable Long user) {
-        return new User("a"+user, "descr "+user);
+        return new User("abbb"+user, "descr2 "+user);
     }
 
 }

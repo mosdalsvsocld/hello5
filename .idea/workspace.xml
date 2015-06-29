@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="103de79f-c4af-4030-8919-803a04800017" name="Default" comment="       &lt;exclusions&gt;&#10;                &lt;exclusion&gt;&#10;                    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;                    &lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId&gt;&#10;                &lt;/exclusion&gt;&#10;            &lt;/exclusions&gt;" />
+    <list default="true" id="103de79f-c4af-4030-8919-803a04800017" name="Default" comment="       &lt;exclusions&gt;&#10;                &lt;exclusion&gt;&#10;                    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;                    &lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId&gt;&#10;                &lt;/exclusion&gt;&#10;            &lt;/exclusions&gt;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/blb/Qq.java" afterPath="$PROJECT_DIR$/src/main/java/blb/Qq.java" />
+    </list>
     <ignored path="helloworld.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,12 +49,12 @@
       <file leaf-file-name="Qq.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/blb/Qq.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4822335">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.40609136">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -559,12 +561,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/blb/Qq.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4822335">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.40609136">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
           </folding>
         </state>
       </provider>
